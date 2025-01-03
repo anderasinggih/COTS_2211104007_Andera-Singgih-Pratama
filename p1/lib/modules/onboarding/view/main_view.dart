@@ -16,14 +16,16 @@ class MainPage extends StatelessWidget {
     return Scaffold(
       body: Obx(() => pages[controller.selectedIndex.value]),
       bottomNavigationBar: Obx(() => BottomNavigationBar(
-        currentIndex: controller.selectedIndex.value,
-        onTap: controller.changeTab,
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.local_offer), label: "Promo"),
-          BottomNavigationBarItem(icon: Icon(Icons.shopping_cart), label: "Pesanan"),
-        ],
-      )),
+            currentIndex: controller.selectedIndex.value,
+            onTap: controller.changeTab,
+            items: [
+              BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.local_offer), label: "Promo"),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.shopping_cart), label: "Pesanan"),
+            ],
+          )),
     );
   }
 }
