@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'onboarding_view.dart'; 
+import 'onboarding_view.dart';
 
 class LoginView extends StatelessWidget {
   @override
@@ -23,7 +23,7 @@ class LoginView extends StatelessWidget {
           children: [
             Center(
               child: Image.asset(
-                'assets/images/logo_gojek.png',
+                'assets/images/GojekLogo.png',
                 height: 50,
               ),
             ),
@@ -90,11 +90,9 @@ class LoginView extends StatelessWidget {
             ),
             Spacer(),
             ElevatedButton(
-              onPressed: () {
-                
-              },
+              onPressed: () {},
               style: ElevatedButton.styleFrom(
-                backgroundColor : Colors.green,
+                backgroundColor: Colors.green,
                 minimumSize: Size(double.infinity, 50),
               ),
               child: Text(
